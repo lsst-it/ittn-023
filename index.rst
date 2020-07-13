@@ -1,42 +1,4 @@
-..
-  Technote content.
-
-  See https://developer.lsst.io/restructuredtext/style.html
-  for a guide to reStructuredText writing.
-
-  Do not put the title, authors or other metadata in this document;
-  those are automatically added.
-
-  Use the following syntax for sections:
-
-  Sections
-  ========
-
-  and
-
-  Subsections
-  -----------
-
-  and
-
-  Subsubsections
-  ^^^^^^^^^^^^^^
-
-  To add images, add the image file (png, svg or jpeg preferred) to the
-  _static/ directory. The reST syntax for adding the image is
-
-  .. figure:: /_static/filename.ext
-     :name: fig-label
-
-     Caption text.
-
-   Run: ``make html`` and ``open _build/html/index.html`` to preview your work.
-   See the README at https://github.com/lsst-sqre/lsst-technote-bootstrap or
-   this repo's README for more info.
-
-   Feel free to delete this instructional comment.
-
-:tocdepth: 1
+:tocdepth: 3
 
 .. Please do not modify tocdepth; will be fixed when a new Sphinx theme is shipped.
 
@@ -46,9 +8,44 @@
 
 .. note::
 
-   **This technote is not yet published.**
+   **This technote is a work in progress.**
 
-   High-level description of the Cisco ISE Cluster deployment for the Rubin Observatory Chilean networks.
+Introduction
+============
+
+Document Overview
+-----------------
+
+Scope
+-----
+
+Assumptions and Caveats
+-----------------------
+
+Related Documents
+-----------------
+- `LSE-78 LSST Observatory Network Design <https://ls.st/LSE-78>`_
+- `LPM-122 Information Classification Policy <https://ls.st/LPM-122>`_
+- `LSE-309 Summit to Base ITC Design <https://ls.st/LSE-309>`_
+
+Deployment Overview
+============
+
+Defined AAA Architecture
+============
+
+Logical Design
+--------------
+
+Physical Design
+---------------
+
+Appendix
+========
+Terminology and acronyms
+------------------------
+
+.. include:: acronyms.rst
 
 .. Add content here.
 .. Do not include the document title (it's automatically added from metadata.yaml).
