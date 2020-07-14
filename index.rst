@@ -20,7 +20,7 @@ Scope
 
 Assumptions and Caveats
 -----------------------
-* It is assumed that low-level configurations for this cluster are considered sensitive as defined in LPM-122 and therefore not shown publicly here. For management-approved project members, details can be found at: (insert confluence link here).
+* It is assumed that low-level configurations for this cluster are considered sensitive as defined in LPM-122 and therefore not shown publicly here. For management-approved project members, details `can be found in Confluence. <https://confluence.lsstcorp.org/display/IT/Cisco+ISE+Cluster+Deployment>`_
 * It is assumed all the project concepts derived from other documents such as those mentioned in section 1.4 and/or the associated ICDs, are correct and remain unchanged.
 * It is assumed the reader is familiar with concepts such as authentication, authorization, accounting, mac address bypass, x.509 certificates, 802.1x, and LDAP trees.
 
