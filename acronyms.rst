@@ -5,7 +5,7 @@ Acronym Description
 +--------+----------------------------------------------------+
 | Term   | Meaning                                            |
 +========+====================================================+
-| AAA    | 	Authentication, Authorization, Accounting         |
+| AAA    | Authentication, Authorization, Accounting          |
 +--------+----------------------------------------------------+
 | ACL    | Access Control List                                |
 +--------+----------------------------------------------------+
