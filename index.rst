@@ -4,12 +4,6 @@
 
 .. sectnum::
 
-.. TODO: Delete the note below before merging new content to the master branch.
-
-.. note::
-
-   **This technote is a work in progress.**
-
 Introduction
 ============
 
@@ -99,7 +93,7 @@ Physical Design
     :name: ISE Logical Design
     :width: 1000 px
     
-The Cisco ISE appliances DO NOT support link aggregation via LACP, only an active/standby NIC bonding, This is created automatically by the base operative system when in the configuration the main NIC is configured to have a backup (e.g. in this case Interface Gi1 is backup to Gi0). For 3615 applies which have up to 6 NICs, 3 bonding groups are created.
+The Cisco ISE appliances DO NOT support link aggregation via LACP, only an active/standby NIC bonding, This is created automatically by the base operative system when in the configuration the main NIC is configured to have a backup (e.g. in this case Interface Gi1 is backup to Gi0). For 3615 appliances which have up to 6 NICs, 3 bonding groups are created.
 
 Redundancy and High-Availability
 --------------------------------
@@ -178,9 +172,6 @@ Terminology and acronyms
 ------------------------
 
 .. include:: acronyms.rst
-
-.. Add content here.
-.. Do not include the document title (it's automatically added from metadata.yaml).
 
 .. .. rubric:: References
 
