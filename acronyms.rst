@@ -53,6 +53,8 @@ Acronym Description
 +--------+----------------------------------------------------+
 | MnT    | Monitoring and Troubleshooting Node                |
 +--------+----------------------------------------------------+
+| NAC    | Network Access Control                             |
++--------+----------------------------------------------------+
 | NIC    | Network Interface Card                             |
 +--------+----------------------------------------------------+
 | NOAO   | National Optical Astronomy Observatory             |
