@@ -9,7 +9,7 @@ Introduction
 
 Document Overview
 -----------------
-The purpose of this document is to describe de deployment of the Cisco ISE cluster for the Rubin Observatory on a high-level, as a way for our collaborators to understand how authentication, authorization, and accounting (AAA) will be performed in the Chilean project networks towards operations, without compromising the security of the cluster configuration itself, based on the requirements set by the project, especially -but not limited to- the Tiger Team in different ICDs and in the documents mentioned in section 1.4.
+The purpose of this document is to describe the deployment of the Cisco ISE cluster for the Rubin Observatory on a high-level, as a way for our collaborators to understand how authentication, authorization, and accounting (AAA) will be performed in the Chilean project networks towards operations, without compromising the security of the cluster configuration itself, based on the requirements set by the project, especially -but not limited to- the Tiger Team in different ICDs and in the documents mentioned in section 1.4.
 
 After acceptance this document may or not be under change control, and regardless of that this is considered a living document that will be updated upon requirement addition or changes, experiences in the deployment, and operations process.
 
@@ -35,7 +35,7 @@ Technical Solution Overview
 
 Context
 -------
-As of early 2017, the network infrastructure in La Serena was very basic and intended for end-users internet and minor intranet access. Authentication and Authorization (AAA) was done manually by the IT North group, authorizing specific machines on specific network ports for wired access, and using 802.1x enabled Wi-Fi SSIDs synced with the Active Directory's LDAP user accounts; no fixed PSKs were used. In contrast to other transition IT services such as VoIP and network infrastructure, CTIO CISS's did not provide support for AAA services.
+As of early 2017, the network infrastructure in La Serena was very basic and intended for end-users, internet, and minor intranet access. Authentication and Authorization (AAA) was done manually by the IT North group, authorizing specific machines on specific network ports for wired access, and using 802.1x enabled Wi-Fi SSIDs synced with the Active Directory's LDAP user accounts; no fixed PSKs were used. In contrast to other transition IT services such as VoIP and network infrastructure, CTIO CISS's did not provide support for AAA services.
 
 As part of technical analysis of the project requirements by several vendors and distributors held in the 2015/2016 timeframe by the Tiger Team, out of which Cisco Systems was the chosen vendor for all the LAN network infrastructure, including AAA, the Cisco Identity Service Engine (ISE) solution was the specific technical solution chosen for the project.
 
@@ -93,7 +93,7 @@ Physical Design
     :name: ISE Logical Design
     :width: 1000 px
     
-The Cisco ISE appliances DO NOT support link aggregation via LACP, only an active/standby NIC bonding, This is created automatically by the base operative system when in the configuration the main NIC is configured to have a backup (e.g. in this case Interface Gi1 is backup to Gi0). For 3615 appliances which have up to 6 NICs, 3 bonding groups are created.
+The Cisco ISE appliances DO NOT support link aggregation via LACP, only an active/standby NIC bonding, This is created automatically by the base operative system when in the configuration the main NIC is configured to have a backup (e.g. in this case Interface Gi1 is backup to Gi0). For 3615 appliances that have up to 6 NICs, 3 bonding groups are created.
 
 Redundancy and High-Availability
 --------------------------------
@@ -117,7 +117,7 @@ Scalability is achieved by adding mode PSN nodes to the cluster, for instance, w
     :name: ISE Scalability
     :width: 500 px
 
-Licensing scales in tiers, being the Base license a perpetual entitlement for basic AAA, MAB, 802.1x, guest services, etc...Then comes the Plus license which enables BYOD capabilities and profiling, among others, and the Apex license which enables posture and third-party integrations. Plus and Apex are subscription-based (1, 3 or 5 years) and these always consume a base license first. Licenses are consumed dynamically based on active sessions, meaning when an authenticated endpoint ends its session, the license is released for reuse by other endpoints.
+Licensing scales in tiers, being the Base license a perpetual entitlement for basic AAA, MAB, 802.1x, guest services, etc...Then comes the Plus license which enables BYOD capabilities and profiling, among others, and the Apex license which enables posture and third-party integrations. Plus and Apex are subscription-based (1, 3, or 5 years) and these always consume a base license first. Licenses are consumed dynamically based on active sessions, meaning when an authenticated endpoint ends its session, the license is released for reuse by other endpoints.
 
 This is just a primer on Cisco ISE licensing, for more information please visit the Licensing section of the `Cisco ISE Administrator Guide. <https://www.cisco.com/c/en/us/td/docs/security/ise/2-6/admin_guide/b_ise_admin_guide_26/b_ise_admin_guide_26_chapter_0110.html>`_
 
